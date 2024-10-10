@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
-public class MacButton {
+public class MacButton implements Button {
+    @Override
+    public void render() {
+        System.out.println("Rendering Mac Button");
+    }
 }

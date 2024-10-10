@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class WindowsGuiFactory implements GuiFactory {
+    @Override
+    public Button createButton() {
+        return new WindowsButton();
+    }
 
-public class WindowsGuiFactory {
+    @Override
+    public Checkbox createCheckbox() {
+        return new WindowsCheckbox();
+    }
 }

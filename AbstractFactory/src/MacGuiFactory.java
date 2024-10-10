@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class MacGuiFactory implements GuiFactory {
+    @Override
+    public Button createButton() {
+        return new MacButton();
+    }
 
-public class MacGuiFactory {
+    @Override
+    public Checkbox createCheckbox() {
+        return new MacCheckbox();
+    }
 }
